@@ -2,10 +2,12 @@ fn main() {
     println!("Hello, world!");
 }
 
+#[allow(dead_code)]
 fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 
+#[allow(dead_code)]
 fn start_application(host: &str, port: u16) {
     if host == "localhost" {
         panic!("You cant use localhost as host");
